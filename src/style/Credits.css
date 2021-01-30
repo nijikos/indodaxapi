@@ -1,0 +1,14 @@
+.credit {
+  min-height: 100px;
+  max-height: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-text {
+  color: rgb(194, 194, 194);
+  font-size: 0.8em;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+.circle-wrapper {
+  z-index: 0;
+}
+
+.circle-one {
+  position: fixed;
+  right: 200px;
+  width: 192px;
+  height: 192px;
+  right: 108px;
+  top: 81px;
+  border-radius: 100%;
+  background: linear-gradient(256.21deg, #f109b4 6.11%, #9640ed 98.69%);
+  mix-blend-mode: lighten;
+  filter: blur(33px);
+}
+
+.circle-two {
+  position: fixed;
+  width: 261px;
+  height: 261px;
+  left: 61px;
+  top: 345px;
+  border-radius: 100%;
+
+  background: linear-gradient(177.32deg, #fe8309 -7.65%, #eb4660 109.89%);
+  mix-blend-mode: lighten;
+  filter: blur(33px);
+}
+
+.circle-three {
+  position: fixed;
+  width: 241px;
+  height: 241px;
+  right: 58px;
+  top: 600px;
+  border-radius: 100%;
+
+  background: linear-gradient(177.32deg, #fe8309 -7.65%, #eb4660 109.89%);
+  mix-blend-mode: lighten;
+  filter: blur(33px);
+}

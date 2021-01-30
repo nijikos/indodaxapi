@@ -1,0 +1,18 @@
+.container-main {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  max-width: 80%;
+  background-color: rgba(32, 33, 54, 0.75);
+  padding: 24px;
+  z-index: 1;
+}
+
+.container-child {
+  /* background-color: rgb(202, 118, 118); */
+  /* ===========================  DISPLAY FLEX START */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* ===========================  DISPLAY FLEX END */
+}
