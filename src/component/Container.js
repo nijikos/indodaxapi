@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./../style/Container.css";
-import Circle from "./Circle";
+import Title from "./Title";
 import Credits from "./Credits";
 import Watermark from "./Watermark";
 import WrapperTable from "./WrapperTable";
@@ -13,6 +13,7 @@ class Container extends Component {
       <div className="container-main">
         <div className="container-child">
           <Watermark />
+          <Title />
           <WrapperVolBtc />
           <WrapperTicker />
           <WrapperTable />
