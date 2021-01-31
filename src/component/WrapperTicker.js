@@ -18,15 +18,19 @@ class WrapperTicker extends Component {
     });
   }
   render() {
-    const numberWithCommas = function (x) {
-      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    };
     const dataHigh = this.state.dataTicker.high;
-    const dataHighFunc = numberWithCommas(`${dataHigh}`);
     const dataLow = this.state.dataTicker.low;
-    const dataLowFunc = numberWithCommas(`${dataLow}`);
     const dataLast = this.state.dataTicker.last;
-    const dataLastFunc = numberWithCommas(`${dataLast}`);
+
+    const numberWithCommas = function (x) {
+      x = parseInt(x);
+      x = x.toLocaleString("id-ID");
+      return x;
+    };
+
+    const dataHighFunc = numberWithCommas(dataHigh);
+    const dataLowFunc = numberWithCommas(dataLow);
+    const dataLastFunc = numberWithCommas(dataLast);
 
     return (
       <div className="ticker-wrapper">

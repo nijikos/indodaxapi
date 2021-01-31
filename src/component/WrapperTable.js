@@ -24,38 +24,28 @@ class WrapperTable extends Component {
   render() {
     const dataBuy = this.state.dataDepthBuy.map(
       ([hargaBeli, btcBeli], index) => {
-        // ===================   NOTE : testing innerhtml versi jsx
-        function numberWithCommas(x) {
-          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        }
-        // ===================   NOTE : testing innerhtml versi jsx
+        let hargaBeliNew = hargaBeli.toLocaleString("id-ID");
+        let btcBeliNew = parseFloat(btcBeli).toString().replace(".", ",");
+        let nilaiIDR = parseFloat(hargaBeli * btcBeli).toLocaleString("id-ID");
         return (
           <tr key={index}>
-            <td
-              dangerouslySetInnerHTML={{
-                __html: numberWithCommas(`${hargaBeli}`),
-              }}
-            ></td>
-            <td>{btcBeli}</td>
+            <td>{hargaBeliNew}</td>
+            <td>{btcBeliNew}</td>
+            <td>{nilaiIDR}</td>
           </tr>
         );
       }
     );
     const dataSell = this.state.dataDepthSell.map(
       ([hargaJual, btcJual], index) => {
-        // ===================   NOTE : testing innerhtml versi jsx
-        function numberWithCommas(x) {
-          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        }
-        // ===================   NOTE : testing innerhtml versi jsx
+        let hargaJualNew = hargaJual.toLocaleString("id-ID");
+        let btcJualNew = parseFloat(btcJual).toString().replace(".", ",");
+        let nilaiIDR = (hargaJual * btcJual).toLocaleString("id-ID");
         return (
           <tr key={index}>
-            <td
-              dangerouslySetInnerHTML={{
-                __html: numberWithCommas(`${hargaJual}`),
-              }}
-            ></td>
-            <td>{btcJual}</td>
+            <td>{hargaJualNew}</td>
+            <td>{btcJualNew}</td>
+            <td>{nilaiIDR}</td>
           </tr>
         );
       }
@@ -70,6 +60,7 @@ class WrapperTable extends Component {
               <div className="table-row">
                 <p>HARGA</p>
                 <p>BTC</p>
+                <p>IDR</p>
               </div>
             </div>
             <div className="table-wrapper" ID="scrollbar">
@@ -86,6 +77,7 @@ class WrapperTable extends Component {
               <div className="table-row">
                 <p>HARGA</p>
                 <p>BTC</p>
+                <p>IDR</p>
               </div>
             </div>
             <div className="table-wrapper" ID="scrollbar">
