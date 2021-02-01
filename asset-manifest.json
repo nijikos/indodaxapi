@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/indodaxapi/static/css/main.3fd3ecca.chunk.css",
-    "main.js": "/indodaxapi/static/js/main.07403c97.chunk.js",
-    "main.js.map": "/indodaxapi/static/js/main.07403c97.chunk.js.map",
+    "main.js": "/indodaxapi/static/js/main.b3d888dc.chunk.js",
+    "main.js.map": "/indodaxapi/static/js/main.b3d888dc.chunk.js.map",
     "runtime-main.js": "/indodaxapi/static/js/runtime-main.37103d35.js",
     "runtime-main.js.map": "/indodaxapi/static/js/runtime-main.37103d35.js.map",
     "static/js/2.ce6dfe64.chunk.js": "/indodaxapi/static/js/2.ce6dfe64.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.37103d35.js",
     "static/js/2.ce6dfe64.chunk.js",
     "static/css/main.3fd3ecca.chunk.css",
-    "static/js/main.07403c97.chunk.js"
+    "static/js/main.b3d888dc.chunk.js"
   ]
 }
