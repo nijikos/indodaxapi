@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/indodaxapi/static/css/main.3fd3ecca.chunk.css",
-    "main.js": "/indodaxapi/static/js/main.b3d888dc.chunk.js",
-    "main.js.map": "/indodaxapi/static/js/main.b3d888dc.chunk.js.map",
+    "main.css": "/indodaxapi/static/css/main.b3302aa0.chunk.css",
+    "main.js": "/indodaxapi/static/js/main.250a7b97.chunk.js",
+    "main.js.map": "/indodaxapi/static/js/main.250a7b97.chunk.js.map",
     "runtime-main.js": "/indodaxapi/static/js/runtime-main.37103d35.js",
     "runtime-main.js.map": "/indodaxapi/static/js/runtime-main.37103d35.js.map",
     "static/js/2.ce6dfe64.chunk.js": "/indodaxapi/static/js/2.ce6dfe64.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.d76234d8.chunk.js": "/indodaxapi/static/js/3.d76234d8.chunk.js",
     "static/js/3.d76234d8.chunk.js.map": "/indodaxapi/static/js/3.d76234d8.chunk.js.map",
     "index.html": "/indodaxapi/index.html",
-    "static/css/main.3fd3ecca.chunk.css.map": "/indodaxapi/static/css/main.3fd3ecca.chunk.css.map",
+    "static/css/main.b3302aa0.chunk.css.map": "/indodaxapi/static/css/main.b3302aa0.chunk.css.map",
     "static/js/2.ce6dfe64.chunk.js.LICENSE.txt": "/indodaxapi/static/js/2.ce6dfe64.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.37103d35.js",
     "static/js/2.ce6dfe64.chunk.js",
-    "static/css/main.3fd3ecca.chunk.css",
-    "static/js/main.b3d888dc.chunk.js"
+    "static/css/main.b3302aa0.chunk.css",
+    "static/js/main.250a7b97.chunk.js"
   ]
 }
