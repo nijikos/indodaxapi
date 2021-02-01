@@ -71,7 +71,7 @@ class WrapperTable extends Component {
           </div>
         </div>
         <div className="table-group-sell table-group">
-          <p className="table-title">Market Jual</p>
+          <p className="table-title">Market Beli</p>
           <div className="table-table">
             <div className="table-header">
               <div className="table-row">
