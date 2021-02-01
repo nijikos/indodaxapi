@@ -8,6 +8,7 @@
 .table-group {
   flex-grow: 1;
   overflow-x: auto;
+  /* overflow-x: auto; */
 }
 
 .table-table {
@@ -26,7 +27,7 @@
   flex-direction: column;
   /* ===========================  NOTE: DISPLAY FLEX */
   min-height: 280px;
-  height: 530px;
+  height: 600px;
   overflow-y: scroll;
   border-radius: 0 0 12px 12px;
 }
@@ -38,68 +39,45 @@
 }
 
 .table {
-  flex-grow: 1;
   border-collapse: collapse;
-  font-size: 0.9em;
+  font-size: 1em;
   /* min-width: 400px; */
   border-radius: 0 0 12px 12px;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   color: white;
-}
-
-.table-header {
-  /* background: rgba(27, 25, 49, 0.2); */
-  border-radius: 12px 12px 0 0;
-  padding: 24px 24px;
-  font-weight: 600;
-  font-size: 1.2em;
-  box-shadow: 0 5px 15px 1px rgba(27, 25, 49, 0.1);
-}
-
-.table-row {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-}
-
-.table-row p {
-  flex-grow: 1;
+  width: 100%;
+  text-align: left;
 }
 
 /* ===========================  NOTE: STYLING FROM YOUTUBE */
-.table thead tr {
-  background-color: white;
-  /* background: rgba(27, 25, 49, 0.2); */
-  text-align: left;
-  font-weight: bold;
-}
 
 .table th,
 .table td {
   padding: 12px 24px;
+  text-align: left;
 }
 
-.table tbody {
-  /* background: linear-gradient(
+.table tr th {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 24px 24px;
+  border-radius: 12px 0 0 0;
+  background: linear-gradient(
       230deg,
-      rgba(69, 72, 119, 1) 0%,
-      rgba(27, 25, 49, 1) 100%
+      rgba(53, 53, 80, 1) 30%,
+      rgba(23, 22, 41, 1) 100%
     )
-    fixed; */
+    fixed;
+  box-shadow: 0 5px 15px 1px rgba(27, 25, 49, 0.1);
 }
 
-.table tbody tr:nth-of-type(even) {
-  /* background: rgba(27, 25, 49, 0.2); */
-}
-
-.table tbody tr {
-  /* border-bottom: 1px solid rgba(27, 25, 49, 0.2); */
-}
-
-.table tbody tr.active-row {
-  font-weight: bold;
-  color: #white;
+.table-header-sticky {
+  padding: 24px 24px;
+  font-weight: 600;
+  font-size: 1.4em;
+  box-shadow: 0 5px 15px 1px rgba(27, 25, 49, 0.1);
 }
 
 /* ===========================  NOTE: NYOBA SCROLLBAR */
@@ -126,4 +104,8 @@
     rgba(254, 131, 9, 1) 0%,
     rgba(235, 70, 96, 1) 100%
   );
+}
+
+#scrollbar::-webkit-scrollbar-corner {
+  background-color: transparent;
 }
